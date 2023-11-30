@@ -1,0 +1,30 @@
+# This is a very useful piece of software
+
+FUN oopify(prefix) -> prefix + "oop"
+
+FUN join(elements, separator)
+	YE result = "" 
+
+	ISS i = 0 SE LEN(elements) TOH
+		YE result = result + elements/i
+		AGAR i != LEN(elements) - 1 TOH YE result = result + separator
+	KHATAM
+
+	WAPAS result
+KHATAM
+
+FUN map(elements, func)
+	YE new_elements = []
+
+	ISS i = 0 SE LEN(elements) TOH
+		APPEND(new_elements, func(elements/i))
+	KHATAM
+
+	WAPAS new_elements
+KHATAM
+
+PRINT("Greetings universe!")
+
+ISS i = 0 SE 5 TOH
+	PRINT(join(map(["l", "sp"], oopify), ", "))
+KHATAM
