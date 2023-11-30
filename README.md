@@ -193,37 +193,5 @@ Executes the Sheesh script in the specified file.
 
 ## Example Sheesh Script
 
-- Replace image here with a code displaying an example Sheesh script.
-```
-# This is a very useful piece of software
-
-FUN oopify(prefix) -> prefix + "oop"
-
-FUN join(elements, separator)
-	YE result = "" 
-
-	ISS i = 0 SE LEN(elements) TOH
-		YE result = result + elements/i
-		AGAR i != LEN(elements) - 1 TOH YE result = result + separator
-	KHATAM
-
-	WAPAS result
-KHATAM
-
-FUN map(elements, func)
-	YE new_elements = []
-
-	ISS i = 0 SE LEN(elements) TOH
-		APPEND(new_elements, func(elements/i))
-	KHATAM
-
-	WAPAS new_elements
-KHATAM
-
-PRINT("Greetings universe!")
-
-ISS i = 0 SE 5 TOH
-	PRINT(join(map(["l", "sp"], oopify), ", "))
-KHATAM
-```
+![Sample Code for Sheesh](https://media.discordapp.net/attachments/741237946060898344/1179826297283821698/carbon_1.png)
 This documentation provides a high-level overview of the Sheesh programming language. For more detailed information, including error handling, advanced features, and additional examples, please contact at `shhhshank@gmail.com`.
