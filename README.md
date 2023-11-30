@@ -4,6 +4,11 @@
 
 **Sheesh** is a dynamically-typed interpreted programming language designed for simplicity and ease of use. It supports basic data types such as numbers, strings, and lists, as well as control flow constructs like conditionals (`AGAR` statements), loops (`ISS` and `JABTAK` loops), and function definitions.
 
+## Usage
+Download the source and extract it, open the folder in terminal and run `python shell.py`
+- You can run the code directly on shell
+- Use `RUN(filename)` to run a external file having extension .sheesh.
+
 ## Data Types
 
 ### Number
